@@ -1,0 +1,34 @@
+mkdir test
+#Creates a new directory called test
+cd test
+#Changes directory to test
+pwd
+#prints working directory path
+echo $SHELL
+#prints the working environment 
+echo $SHELL > blah
+#saves the location of the working environment to file blah
+ls
+#Lists folders in the current directory
+cp blah blah2
+#Creates a copy of blah onto blah 2
+ls -lrt blah*
+#List all files in with the file name blah in the directory by date
+mv blah2 .blah2
+#Renames blah2 to .blah2 where "." indicates a hidden file
+ls
+#List all files in the directory
+ls -a
+#List all files in the directory including the hidden ones
+wget http://classic.sdss.org/dr7/instruments/imager/filters/g.dat
+#Pulls from http://classic.sdss.org/dr7/instruments/imager/filter and saves g.dat
+less g.dat
+#Opens g.dat
+wget http://classic.sdss.org/dr7/instruments/imager/filters/r.dat
+#Pulls from the website and saves r.dat
+wget http://classic.sdss.org/dr7/instruments/imager/filters/i.dat
+#Pulls from the website and saves i.dat
+grep 64 *dat
+# 
+rm blah .blah2
+#Removes blah and .blah2
